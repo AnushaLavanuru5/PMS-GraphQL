@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 
 const ProjectSchema = new mongoose.Schema({
-    name:{
+    name: {
         type:String,
     },
-    email:{
+    description: {
         type:String,
     },
-    phone:{
+    status: {
         type:String,
         enum: ['Not Started', 'In Progress', 'Completed'],
     },
